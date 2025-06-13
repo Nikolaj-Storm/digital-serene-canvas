@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Dr. Alexandra Chen</title>
+    <title>Blog & Insights - Nikolaj Storm Petersen</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">AC</a>
+            <a href="index.html" class="nav-logo">Academic Portfolio</a>
             <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="blog.html" class="nav-link active">Blog</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
                 <li><a href="papers.html" class="nav-link">Academic Papers</a></li>
@@ -24,56 +25,71 @@
 
     <main class="container">
         <header class="page-header fade-in">
-            <h1>Blog</h1>
-            <p>Thoughts on digital humanities, computational linguistics, and the future of research</p>
+            <h1>Blog & Insights</h1>
+            <p>Thoughts, reflections, and insights from my academic journey and research experiences.</p>
         </header>
+
+        <section class="filter-buttons fade-in">
+            <button class="filter-btn active">All Posts</button>
+            <button class="filter-btn">Research</button>
+            <button class="filter-btn">Technology</button>
+            <button class="filter-btn">Academia</button>
+            <button class="filter-btn">Methodology</button>
+            <button class="filter-btn">Collaboration</button>
+            <button class="filter-btn">Open Science</button>
+            <button class="filter-btn">Publishing</button>
+            <button class="filter-btn">Access</button>
+            <button class="filter-btn">Education</button>
+            <button class="filter-btn">Mentorship</button>
+            <button class="filter-btn">Career</button>
+            <button class="filter-btn">Work-Life Balance</button>
+            <button class="filter-btn">Wellness</button>
+            <button class="filter-btn">Productivity</button>
+        </section>
 
         <section class="blog-posts">
             <article class="blog-post-preview fade-in">
-                <h2><a href="posts/post1.html">The Future of Digital Humanities: Bridging Technology and Literature</a></h2>
+                <h2><a href="posts/post1.html">The Future of Academic Research in the Digital Age</a></h2>
                 <div class="post-meta">
-                    <time datetime="2024-06-10">June 10, 2024</time>
+                    <time datetime="2024-03-15">March 15, 2024</time>
                     <div class="tags">
-                        <span class="tag">Digital Humanities</span>
+                        <span class="tag">Research</span>
                         <span class="tag">Technology</span>
-                        <span class="tag">Literature</span>
+                        <span class="tag">Academia</span>
                     </div>
                 </div>
                 <p class="post-excerpt">
-                    As we stand at the intersection of traditional humanities scholarship and cutting-edge technology, 
-                    new opportunities emerge for understanding literature, history, and culture through computational methods...
+                    Exploring how digital transformation is reshaping the landscape of academic research and scholarly communication. This comprehensive analysis examines the opportunities and challenges that emerge as traditional research methodologies evolve in our increasingly connected world.
                 </p>
             </article>
 
             <article class="blog-post-preview fade-in">
-                <h2><a href="posts/post2.html">Machine Learning in Historical Text Analysis</a></h2>
+                <h2><a href="posts/post2.html">Building Collaborative Research Networks in the Digital Era</a></h2>
                 <div class="post-meta">
-                    <time datetime="2024-05-28">May 28, 2024</time>
+                    <time datetime="2024-02-28">February 28, 2024</time>
                     <div class="tags">
-                        <span class="tag">Machine Learning</span>
-                        <span class="tag">Historical Analysis</span>
-                        <span class="tag">NLP</span>
+                        <span class="tag">Collaboration</span>
+                        <span class="tag">Technology</span>
+                        <span class="tag">Research</span>
                     </div>
                 </div>
                 <p class="post-excerpt">
-                    Recent advances in natural language processing have opened new avenues for analyzing historical texts. 
-                    This post explores how transformer models can help us understand linguistic evolution...
+                    Modern research increasingly depends on collaborative networks that span institutions, disciplines, and geographical boundaries. This post explores strategies for building and maintaining effective research partnerships in our digital-first academic environment.
                 </p>
             </article>
 
             <article class="blog-post-preview fade-in">
-                <h2><a href="posts/post3.html">Building Accessible Digital Archives</a></h2>
+                <h2><a href="posts/post3.html">Open Science and the Future of Academic Publishing</a></h2>
                 <div class="post-meta">
-                    <time datetime="2024-05-15">May 15, 2024</time>
+                    <time datetime="2024-02-10">February 10, 2024</time>
                     <div class="tags">
-                        <span class="tag">Digital Archives</span>
-                        <span class="tag">Accessibility</span>
-                        <span class="tag">UX Design</span>
+                        <span class="tag">Open Science</span>
+                        <span class="tag">Publishing</span>
+                        <span class="tag">Access</span>
                     </div>
                 </div>
                 <p class="post-excerpt">
-                    Creating digital archives that serve both researchers and the general public requires careful consideration 
-                    of accessibility, user experience, and long-term preservation...
+                    The movement toward open science represents a fundamental shift in how we conduct, share, and evaluate research. This analysis examines the implications of open access publishing, data sharing, and collaborative research practices for the future of academic scholarship.
                 </p>
             </article>
         </section>
@@ -81,11 +97,11 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Dr. Alexandra Chen. All rights reserved.</p>
+            <p>&copy; 2024 Nikolaj Storm Petersen. All rights reserved.</p>
             <div class="social-links">
-                <a href="mailto:alexandra.chen@university.edu">Email</a>
-                <a href="https://twitter.com/alexchen">Twitter</a>
-                <a href="https://github.com/alexchen">GitHub</a>
+                <a href="mailto:nikolaj@example.com">Email</a>
+                <a href="https://twitter.com/nikolajstorm">Twitter</a>
+                <a href="https://github.com/nikolaj-storm">GitHub</a>
             </div>
         </div>
     </footer>
