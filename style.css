@@ -1,9 +1,9 @@
 
 /* Root Variables */
 :root {
-    --primary-color: #8B2635;
-    --secondary-color: #A53E4C;
-    --background-color: #FAFAFA;
+    --primary-color: #6B1E2A;
+    --secondary-color: #8B2635;
+    --background-color: #f4e2cf;
     --card-background: #FFFFFF;
     --text-color: #2A2A2A;
     --text-light: #6B6B6B;
@@ -136,7 +136,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     padding: 6rem 2rem 4rem;
-    background: linear-gradient(135deg, var(--background-color) 0%, #F5F5F5 100%);
+    background: linear-gradient(135deg, var(--background-color) 0%, #f0d6bb 100%);
 }
 
 .hero-content {
@@ -313,19 +313,20 @@ a:hover {
     box-shadow: var(--shadow-medium);
     border: 1px solid var(--border-color);
     transition: var(--transition);
+    display: block;
+    color: inherit;
+    cursor: pointer;
 }
 
 .blog-post-preview:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-hover);
+    color: inherit;
 }
 
 .blog-post-preview h2 {
     margin-bottom: 1rem;
     font-size: 1.75rem;
-}
-
-.blog-post-preview h2 a {
     color: var(--text-color);
 }
 
@@ -380,11 +381,15 @@ a:hover {
     box-shadow: var(--shadow-medium);
     transition: var(--transition);
     border: 1px solid var(--border-color);
+    display: block;
+    color: inherit;
+    cursor: pointer;
 }
 
 .project-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-hover);
+    color: inherit;
 }
 
 .project-status {
@@ -427,10 +432,6 @@ a:hover {
     font-size: 1.5rem;
 }
 
-.project-content h3 a {
-    color: inherit;
-}
-
 .project-content p {
     color: var(--text-light);
     margin-bottom: 1.5rem;
@@ -458,32 +459,6 @@ a:hover {
     padding: 4rem 0;
 }
 
-.filter-buttons {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 3rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.filter-btn {
-    padding: 0.75rem 1.5rem;
-    border: 2px solid var(--border-color);
-    border-radius: 25px;
-    background-color: var(--card-background);
-    color: var(--text-color);
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.filter-btn.active,
-.filter-btn:hover {
-    background-color: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
-}
-
 .paper-entry {
     background-color: var(--card-background);
     padding: 2.5rem;
@@ -492,16 +467,21 @@ a:hover {
     box-shadow: var(--shadow-medium);
     border: 1px solid var(--border-color);
     transition: var(--transition);
+    display: block;
+    color: inherit;
+    cursor: pointer;
 }
 
 .paper-entry:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-hover);
+    color: inherit;
 }
 
-.paper-entry h3 a {
+.paper-entry h3 {
     color: var(--text-color);
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .paper-meta {
@@ -695,15 +675,6 @@ a:hover {
     
     .project-content {
         padding: 1.5rem;
-    }
-    
-    .filter-buttons {
-        gap: 0.75rem;
-    }
-    
-    .filter-btn {
-        padding: 0.625rem 1.25rem;
-        font-size: 0.875rem;
     }
 }
 
